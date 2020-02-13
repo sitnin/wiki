@@ -12,3 +12,13 @@ $ for i in {10..27}; do mv "Фото ${i}.jpg" "${i}.jpg"; done
 $ for i in *; do echo ${i}; done
 ```
 
+## удалить нафиг найденное
+
+```
+$ find . -iname *.pyc xargs rm
+```
+
+## показать дату-время (по UTC) в формате JS-Timestamp
+
+$ date -u "+%s000"
+
