@@ -1,0 +1,33 @@
+{
+    "git.ignoreMissingGitWarning": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "'Cascadia Code','Fira Code Retina', 'Yousevka Terminal', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "git.autofetch": true,
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+    },
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "docker.containers.label": "ContainerName",
+    "docker.containers.description": [
+        "Ports",
+        "RepositoryNameAndTag",
+        "Status"
+    ],
+    "editor.renderWhitespace": "selection",
+    "editor.wordWrapColumn": 120,
+    "editor.accessibilitySupport": "off",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "extensions.ignoreRecommendations": false,
+    "git.confirmSync": false,
+    "editor.fontSize": 15,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.implicitProjectConfig.experimentalDecorators": true
+}

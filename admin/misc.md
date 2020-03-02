@@ -176,5 +176,10 @@ https://openvpn.net/index.php/open-source/documentation/howto.html
 
 
 
+# Imgproxy in docker with local files access
 
+docker run -d --name ekuine_imgproxy --restart unless-stopped -e IMGPROXY_CACHE_CONTROL_PASSTHROUGH=true -e IMGPROXY_USE_ETAG=true -e IMGPROXY_LOCAL_FILESYSTEM_ROOT="/var/data" -e IMG_PROXY_WATERMARK_PATH="/static/img/logo-wide-2200x580.png" -e IMGPROXY_LOG_FORMAT=pretty -e IMGPROXY_LOG_LEVEL=debug -v /home/sitnin/Projects/ekuine/var:/var/data -p 127.0.0.1:7700:8080 darthsim/imgproxy
 
+echo "local:///uploads/risling/photo1.jpeg" | tr -d '\n' | base64
+
+https://ek.local/i/insecure/bG9jYWw6Ly8vdXBsb2Fkcy9yaXNsaW5nL3Bob3RvMS5qcGVn.jpg

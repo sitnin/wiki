@@ -1,15 +1,37 @@
 # Полезное для Docker'а
 
+## Полезная документация
+
+Тома сильно изменились с Docker 17.06: https://docs.docker.com/storage/volumes/
+
+https://habr.com/ru/company/flant/blog/336654/
+
+## Показать внутрейнний адрес докер-хоста
+
+```bash
+$ ip addr show docker0 | grep -Po 'inet \K[\d.]+'
+```
+
+## Удаление всех остановленных контейнеров
+
+```bash
+$ docker container prune
+```
+
 ## Запустить инстанс PostgreSQL
 
 ```
+docker volume create pgdata
+```
+
+```
 docker run -d
-    --name postgres10
+    --name postgres12
     --restart unless-stopped
     -e POSTGRES_PASSWORD=gfhjkm
-    -p 127.0.0.1:5432:5432
-    -v /root/Docker/postgres10:/var/lib/postgresql/data
-    postgres:10.3
+    -p 127.0.0.1:5437:5432
+    -v /root/docker/postgres12:/var/lib/postgresql/data
+    postgres:12
 ```
 
 ```

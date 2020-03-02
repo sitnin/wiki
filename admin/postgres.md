@@ -1,5 +1,9 @@
 # Полезности для PostgreSQL
 
+## Про бэкапы
+
+https://habr.com/ru/post/485622/
+
 ## Установка свежей версии из пакетов (ubuntu)
 
 https://www.postgresql.org/download/linux/ubuntu/
@@ -20,8 +24,8 @@ deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main
 ```
 # su - postgres
 $ psql
-> alter user postgres password 'apassword';
-> flush priveleges;
+> alter role postgres password 'apassword';
+> flush privileges;
 ```
 
 ## Присоединиться к базе
@@ -42,4 +46,10 @@ create database dbname with owner=dbowner encoding='UTF8';
 ```
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 SELECT encode(digest('foobarbaz'::bytea, 'sha1'), 'hex');
+```
+
+## Подключить функции uuid к БД (из-под postgres)
+
+```sql
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 ```
