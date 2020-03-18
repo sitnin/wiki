@@ -3,6 +3,8 @@
 ```
 # from https://cipherli.st/
 # and https://raymii.org/s/tutorials/Strong_SSL_Security_On_nginx.html
+# and https://sysadmin.pm/hsts-preload-list/
+
 
 ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 ssl_prefer_server_ciphers on;

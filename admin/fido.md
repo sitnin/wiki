@@ -1,3 +1,11 @@
+https://fido.kruglikov.info/hpt_curr.php
+
+
+
+
+
+
+
 https://nodehist.fidonet.org.ua/?address=2%3A5020%2F2036
 
 
