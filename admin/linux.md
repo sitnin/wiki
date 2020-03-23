@@ -29,3 +29,17 @@ $ sudo sysctl --system
 ```bash
 $ sudo sysctl -q fs.inotify.max_user_watches
 ```
+
+## Wine
+
+https://wiki.winehq.org/Ubuntu
+
+http://ubuntuhandbook.org/index.php/2020/01/install-wine-5-0-stable-ubuntu-18-04-19-10/
+
+https://tecadmin.net/install-wine-on-ubuntu/
+
+https://habr.com/en/post/124202/
+
+https://habr.com/en/post/124606/
+
+winetricks

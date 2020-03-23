@@ -1,3 +1,20 @@
+https://ffmpeg.org/ffmpeg.html
+
+
+# Обрезать видео
+
+```bash
+$ ffmpeg -i input.mp4 -c:av copy -ss 00:22:21 -to 02:20:26 output.mp4
+```
+
+-ss -- время начала (по оригиналу)
+-to -- время конца (по оригиналу)
+
+вместо `-to` можно применить `-t`, чтобы задать длину выходного ролика (в секундах?)
+
+# Неразгребёнка
+
+
 ffmpeg -i Sample.avi -vn -ar 44100 -ac 2 -ab 192k -f mp3 Sample.mp3
 
 ffmpeg -i input-video.avi -vn -acodec copy output-audio.aac
@@ -40,4 +57,3 @@ speedup audio 2x
 ```
 ffmpeg -i input.mkv -filter:a "atempo=2.0" -vn output.mkv
 ```
-
