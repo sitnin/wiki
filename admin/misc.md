@@ -1,5 +1,11 @@
 # Всякое разное и полезное
 
+## bcrypt-cli
+
+https://github.com/bitnami/bcrypt-cli (go)
+https://github.com/Keats/rust-bcrypt (rust lib)
+
+
 ## Мои сети в Selectel
 
 80.93.179.248/29

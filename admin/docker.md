@@ -56,8 +56,8 @@ docker run -d
     --name mongo
     --restart unless-stopped
     -p 127.0.0.1:27017:27017
-    -v /Users/gregor/Docker/mongodb:/data/db
-    mongo:3.6
+    -v /root/docker/mongo4:/data/db
+    mongo:4
 ```
 
 ```
@@ -74,9 +74,23 @@ docker run -d
     --name redis
     --restart unless-stopped
     -p 127.0.0.1:6379:6379
-    -v /Users/sitnin/Docker/redis:/data
-    -d redis:3.2
+    -v /root/docker/redis5:/data
+    -d redis:5
 ```
+
+
+```
+docker run -d
+    --name redis-commander
+    --restart unless-stopped
+    --env REDIS_HOSTS=redis
+    --link redis
+    -p 127.0.0.1:26379:8081
+    rediscommander/redis-commander:latest
+```
+
+
+
 
 ```
 docker run -d

@@ -1,3 +1,16 @@
+https://ohmyz.sh/
+
+https://github.com/ohmyzsh/ohmyzsh
+
+https://github.com/powerline/fonts
+
+
+
+
+
+
+
+
 https://losst.ru/ustanovka-ubuntu-18-04
 
 https://losst.ru/ustanovka-linux-na-uefi#_Linux_UEFI
@@ -43,3 +56,18 @@ https://habr.com/en/post/124202/
 https://habr.com/en/post/124606/
 
 winetricks
+
+## NVME / SSD в Linux
+
+https://unixforum.org/viewtopic.php?f=82&t=146764
+
+$ sudo systemctl enable fstrim.timer
+
+/etc/udev/rules.d/60-schedulers.rules
+
+ACTION=="add|change", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="0", ATTR{queue/scheduler}="noop"
+
+
+/etc/sysctl.d/99-sysctl.conf
+
+vm.swappiness=1

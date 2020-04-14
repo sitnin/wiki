@@ -27,3 +27,9 @@ ssh -nNT -L 9000:localhost:3000 user@example.com
 ```bash
 ssh -nNT -R 9000:localhost:3000 user@example.com
 ```
+
+## (когда код работает у меня, но отдаёт серверному nginx)
+
+```bash
+$ ssh -nNT -R 24000:localhost:24000 fst-03
+```
